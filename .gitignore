@@ -1,0 +1,13 @@
+.git
+.gradle
+.project
+.settings
+.classpath
+
+/bin/*
+/build/*
+
+log.txt
+*.war
+*.docx
+/bin/

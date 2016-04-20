@@ -1,0 +1,6 @@
+<select id="reportType" name="reportType" size="1">
+	<option></option>
+	<option value=1>Загальний</option>
+	<option value=2>По ЄРДР</option>
+</select>
+<button class="button" name="type_report" formmethod="GET" onClick="window.location='/statistic/report?reportType=' + document.getElementById('reportType').value">Виконати</button>

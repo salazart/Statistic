@@ -1,0 +1,47 @@
+<script src="js/calendar_kdg.js" type="text/javascript"></script>
+<script src="js/jquery-1.12.0.min.js" type="text/javascript"></script>
+<script src="js/jquery.maskedinput.js" type="text/javascript"></script>
+<script src="js/check.js" type="text/javascript"></script>
+<script src="js/hotkey.comma.js" type="text/javascript"></script>
+<script src="js/addTable.js" type="text/javascript"></script>
+<script src="js/check.leters.js" type="text/javascript"></script>
+<script src="js/hotkey.addTable.js" type="text/javascript"></script>
+
+
+<!--
+<script type="text/javascript">
+  function hotkey(event) {
+    var id = event.keyCode;
+     //if(window.event.ctrlKey && window.event.altKey && window.event.keyCode == 50) 
+    if(window.event.keyCode==40)
+    	{
+    	addRowObject();
+    	}
+
+    document.getElementById("key").innerHTML = id;
+  }
+</script>
+-->
+
+<body bgcolor="#4a5770";">
+   <div id="key"></div>
+  
+  				<table id="objectData"  class="tftable" border="1">
+				
+    				<th style="width: 50%;">Тип</th>
+    				<th style="width: 35%;">
+    					<img src="img/operators.gif" width="150" height="30">
+    				</th>
+    				<th style="width: 5%;">Відправлено</th>
+    				<th style="width: 5%;"></th>
+    					
+    	
+    					
+    				<tr>
+						<input type="button" value="+" onclick="Javascript:addRowObject()">
+					</tr>
+				</table>
+  
+  <INPUT onkeyup="hotkey(event)" value="Введите ваше имя">
+</body>
+

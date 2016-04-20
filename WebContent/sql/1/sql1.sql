@@ -1,0 +1,1 @@
+EXEC dbo.proc1 @startDate = ?, @maxDate = ?

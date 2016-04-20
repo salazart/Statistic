@@ -1,0 +1,37 @@
+apply plugin: 'java'
+apply plugin: 'war' 
+apply plugin: 'eclipse-wtp'
+
+war {
+    baseName = 'statistic'
+}
+
+sourceSets {
+	main.java.srcDir "src/main/java"
+	main.resources.srcDir "src/main/resources"
+}
+
+webAppDirName = 'WebContent'
+
+
+repositories {
+  mavenCentral()
+  flatDir {
+		dirs "src/main/resources/libs"
+	}
+}
+
+dependencies {
+  	compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.4.1'
+	compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.4.1'
+	
+	compile 'commons-io:commons-io:2.4'
+	compile 'junit:junit:4.12'
+	compile 'org.apache.poi:poi-ooxml:3.9'
+	compile 'org.apache.commons:commons-lang3:3.0'
+	compile 'javax.servlet:javax.servlet-api:3.1.0'
+	
+	
+	compile name: 'sqljdbc42'
+	
+}
